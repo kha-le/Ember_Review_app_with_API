@@ -1,0 +1,9 @@
+<div id="new-review-form" class="form-group">
+    {{input type='name' placeholder='Name' value=name class='name-input'}}
+    <br>
+    {{input type='number' placeholder='Rating' value=rating class='rating-input'}}
+    <hr>
+    {{textarea value=name placeholder='Write your review' cols="80" rows="6" value=body class='body-input'}}
+    <br>
+    <button {{action 'addReview'}} class="submit">Submit</button>
+</div>

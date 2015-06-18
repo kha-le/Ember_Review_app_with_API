@@ -1,0 +1,9 @@
+{{#each review in model}}
+  <div class="each-review">{{review.name}}: <br>
+     {{review.body}}</div>
+     <br>
+{{/each}}
+
+
+<h2 id="title">My Map Component</h2>
+{{google-map latitude="34.851939" longitude="-82.399752"}}

@@ -1,0 +1,11 @@
+<h4>Reviews:</h4>
+
+<div id="name">
+  {{#each review in model}}
+  <div class="each-review"><b>{{review.name}}:</b> {{review.rating}} out of 10 stars</div>
+  {{/each}}
+</div>
+
+<hr>
+<div class="new-review-link">{{#link-to 'reviews.new'}}Add a new review{{/link-to}}</div>
+{{outlet}}
